@@ -1,0 +1,12 @@
+POST  http://localhost:3000/createTask
+Content-Type: application/json
+
+{
+  "text": "Take a hot shower",
+  "date": "25-10-17",
+  "username":"diexdev"
+}
+
+###
+
+GET http://localhost:3000/getTasks/diexdev
