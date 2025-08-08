@@ -21,7 +21,7 @@ export class AppControllers {
 
   static register = async (req, res) => {
     const { name, password, username, confirmPassword, age, email } = req.body
-    if(password !== confirmPassword) return res.status(400).json({ messsage: 'Passwords doesnt match' })
+    if(password !== confirmPassword) return res.status(400).json({ message: 'Passwords doesnt match' })
 
     try {
       const registered = await AppModels.register({ name, password, username, email, age })
